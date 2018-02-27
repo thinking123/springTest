@@ -1,23 +1,19 @@
-package com.test.spring;
+package com.test.knight;
 
-import com.test.knight.UseTest;
+import com.test.spring.HelloConfig;
+import com.test.spring.SpringHello;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Created by liangqing on 2018/2/7.
- */
-public class AutoMain {
+public class KnightMain {
     public static void main(String[] args){
         try{
-            ApplicationContext ctx = new AnnotationConfigApplicationContext(HelloConfig.class);
+//            ApplicationContext ctx = new AnnotationConfigApplicationContext(TestConfig.class);
 
 
-//            ApplicationContext ctx = new ClassPathXmlApplicationContext("XMLConfigTest.xml");
+            ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:META-INF/XMLConfigTest.xml");
 
-         SpringHello sh = ctx.getBean(SpringHello.class);
-         sh.play();
 
 
             UseTest ut = ctx.getBean(UseTest.class);

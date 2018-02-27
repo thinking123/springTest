@@ -1,5 +1,6 @@
 package com.test.knight;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Component;
 //@Component
 public class UseTest {
 
+//    @Autowired
     private Test1 t1;
 
     public UseTest(Test1 t1){

@@ -9,8 +9,8 @@ import javax.inject.Named;
 /**
  * Created by liangqing on 2018/2/6.
  */
-@Named("mycdplay")
-@Component
+//@Named("mycdplay")
+//@Component
 public class CDPlay {
 
     private SpringHello sh;
